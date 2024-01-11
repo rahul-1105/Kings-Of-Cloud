@@ -1579,6 +1579,16 @@ textarea.input-field {
   }
 }
 
+.reservation .input-wrapper {
+  display: grid;
+  /* grid-template-columns: 1fr 1fr; */
+  column-gap: 20px;
+}
+
+.reservation .input-wrapper:nth-child(4) {
+  grid-template-columns: repeat(1, 1fr);
+}
+
 /*-----------------------------------*\
   #FEATURES
 \*-----------------------------------*/
@@ -1996,6 +2006,14 @@ textarea.input-field {
   }
 
   /**
+   * reservation
+   */
+
+  .reservation .input-wrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /**
    * EVENT
    */
 
@@ -2097,8 +2115,6 @@ textarea.input-field {
     background-color: var(--gold-crayola);
     color: var(--black);
   }
-
- 
 
   /**
    * FOOTER
@@ -2507,7 +2523,6 @@ textarea.input-field {
     width: max-content;
   }
 
-  
   /**
    * FEATURES
    */
@@ -2529,26 +2544,4 @@ textarea.input-field {
     bottom: 80px;
     left: 0;
   }
-}
-
-
-
-@media (max-width: 300px) {
-
-
-
-   /**
-   * RESERVATION
-   */
-
-   .reservation .input-wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 20px;
-  }
-
-  .reservation .input-wrapper:nth-child(4) {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
 }
