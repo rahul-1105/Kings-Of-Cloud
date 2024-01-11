@@ -32,7 +32,6 @@
     - custom css link
   -->
     <link rel="stylesheet" href="./assets/css/style.css" />
-    <link rel="stylesheet" href="./assets/css/gallery.css" />
 
     <!-- 
     - preload images
@@ -138,7 +137,7 @@
             </li>
 
             <li class="navbar-item">
-              <a href="about.html" class="navbar-link hover-underline active">
+              <a href="about.html" class="navbar-link hover-underline">
                 <div class="separator"></div>
 
                 <span class="span">About Us</span>
@@ -154,7 +153,7 @@
             </li>
 
             <li class="navbar-item">
-              <a href="contact.html" class="navbar-link hover-underline">
+              <a href="contact.html" class="navbar-link hover-underline active">
                 <div class="separator"></div>
 
                 <span class="span">Contact</span>
@@ -218,79 +217,6 @@
         - #ABOUT
       -->
 
-        <section
-          class="section about text-center"
-          aria-labelledby="about-label"
-          id="about">
-          <div class="container">
-            <div class="about-content">
-              <p class="label-2 section-subtitle" id="about-label">Our Story</p>
-
-              <h2 class="headline-1 section-title">
-                Every Flavour Tells a Story
-              </h2>
-
-              <p class="section-text">
-                Lorem Ipsum is simply dummy text of the printingand typesetting
-                industry lorem Ipsum has been the industrys standard dummy text
-                ever since the when an unknown printer took a galley of type and
-                scrambled it to make a type specimen book It has survived not
-                only five centuries, but also the leap into.
-              </p>
-
-              <div class="contact-label">Book Through Call</div>
-
-              <a
-                href="tel:+804001234567"
-                class="body-1 contact-number hover-underline"
-                >+80 (400) 123 4567</a
-              >
-            </div>
-
-            <figure class="about-banner">
-              <img
-                src="./assets/images/about-banner.jpg"
-                width="570"
-                height="570"
-                loading="lazy"
-                alt="about banner"
-                class="w-100"
-                data-parallax-item
-                data-parallax-speed="1" />
-
-              <div
-                class="abs-img abs-img-1 has-before"
-                data-parallax-item
-                data-parallax-speed="1.75">
-                <img
-                  src="./assets/images/about-abs-image.jpg"
-                  width="285"
-                  height="285"
-                  loading="lazy"
-                  alt=""
-                  class="w-100" />
-              </div>
-
-              <div class="abs-img abs-img-2 has-before">
-                <img
-                  src="./assets/images/badge-2.png"
-                  width="133"
-                  height="134"
-                  loading="lazy"
-                  alt="" />
-              </div>
-            </figure>
-
-            <img
-              src="./assets/images/shape-3.png"
-              width="197"
-              height="194"
-              loading="lazy"
-              alt=""
-              class="shape" />
-          </div>
-        </section>
-
         <!-- 
         - #SPECIAL DISH
       -->
@@ -307,157 +233,106 @@
         - #RESERVATION
       -->
 
+      <section class="reservation" id="reservation">
+        <div class="container">
+          <div class="form reservation-form bg-black-10">
+            <form action="" class="form-left">
+              <h2 class="headline-1 text-center">Contact Us</h2>
+
+              <p class="form-text text-center">
+                Booking request
+                <a href="tel:+91 9244292939" class="link">+91 9244292939</a>
+                or fill out the form
+              </p>
+
+              <div class="input-wrapper">
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Your Name"
+                  autocomplete="off"
+                  class="input-field" />
+
+                <input
+                  type="tel"
+                  name="phone"
+                  placeholder="Phone Number"
+                  autocomplete="off"
+                  class="input-field" />
+              </div>
+
+              <div class="input-wrapper">
+                <div class="icon-wrapper">
+                  <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+
+                  <input
+                    type="email"
+                    name="email"
+                    class="input-field"
+                    placeholder="Enter Your Email" />
+                </div>
+              </div>
+
+              <textarea
+                name="message"
+                placeholder="Message"
+                autocomplete="off"
+                class="input-field"></textarea>
+
+              <button type="submit" class="btn btn-secondary">
+                <span class="text text-1">Book A Table</span>
+
+                <span class="text text-2" aria-hidden="true"
+                  >Book A Table</span
+                >
+              </button>
+            </form>
+
+            <div
+              class="form-right text-center"
+              style="
+                background-image: url('./assets/images/form-pattern.png');
+              ">
+              <!-- <h2 class="headline-1 text-center">Contact Us</h2> -->
+
+              <p class="contact-label">Booking Request</p>
+
+              <a
+                href="tel:+91 9244292939"
+                class="body-1 contact-number hover-underline"
+                >+91 9244292939</a
+              >
+
+              <div class="separator"></div>
+
+              <p class="contact-label">Location</p>
+
+              <address class="body-4">
+                Bhedaghat Road, Near Duhadhar waterfall, <br />
+                Jabalpur, M.P.
+              </address>
+
+              <p class="contact-label">Lunch Time</p>
+
+              <p class="body-4">
+                Monday to Sunday <br />
+                11.00 am - 2.30pm
+              </p>
+
+              <p class="contact-label">Dinner Time</p>
+
+              <p class="body-4">
+                Monday to Sunday <br />
+                05.00 pm - 10.00pm
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
         <!-- 
         - #FEATURES
       -->
-
-        <section class="section features text-center" aria-label="features">
-          <div class="container">
-            <p class="section-subtitle label-2">Why Choose Us</p>
-
-            <h2 class="headline-1 section-title">Our Strength</h2>
-
-            <ul class="grid-list">
-              <li class="feature-item">
-                <div class="feature-card">
-                  <div class="card-icon">
-                    <img
-                      src="./assets/images/features-icon-1.png"
-                      width="100"
-                      height="80"
-                      loading="lazy"
-                      alt="icon" />
-                  </div>
-
-                  <h3 class="title-2 card-title">Hygienic Food</h3>
-
-                  <p class="label-1 card-text">
-                    Lorem Ipsum is simply dummy printing and typesetting.
-                  </p>
-                </div>
-              </li>
-
-              <li class="feature-item">
-                <div class="feature-card">
-                  <div class="card-icon">
-                    <img
-                      src="./assets/images/features-icon-2.png"
-                      width="100"
-                      height="80"
-                      loading="lazy"
-                      alt="icon" />
-                  </div>
-
-                  <h3 class="title-2 card-title">Fresh Environment</h3>
-
-                  <p class="label-1 card-text">
-                    Lorem Ipsum is simply dummy printing and typesetting.
-                  </p>
-                </div>
-              </li>
-
-              <li class="feature-item">
-                <div class="feature-card">
-                  <div class="card-icon">
-                    <img
-                      src="./assets/images/features-icon-3.png"
-                      width="100"
-                      height="80"
-                      loading="lazy"
-                      alt="icon" />
-                  </div>
-
-                  <h3 class="title-2 card-title">Skilled Chefs</h3>
-
-                  <p class="label-1 card-text">
-                    Lorem Ipsum is simply dummy printing and typesetting.
-                  </p>
-                </div>
-              </li>
-
-              <li class="feature-item">
-                <div class="feature-card">
-                  <div class="card-icon">
-                    <img
-                      src="./assets/images/features-icon-4.png"
-                      width="100"
-                      height="80"
-                      loading="lazy"
-                      alt="icon" />
-                  </div>
-
-                  <h3 class="title-2 card-title">Event & Party</h3>
-
-                  <p class="label-1 card-text">
-                    Lorem Ipsum is simply dummy printing and typesetting.
-                  </p>
-                </div>
-              </li>
-            </ul>
-
-            <img
-              src="./assets/images/shape-7.png"
-              width="208"
-              height="178"
-              loading="lazy"
-              alt="shape"
-              class="shape shape-1" />
-
-            <img
-              src="./assets/images/shape-8.png"
-              width="120"
-              height="115"
-              loading="lazy"
-              alt="shape"
-              class="shape shape-2" />
-          </div>
-        </section>
-
-        <section class="section text-center">
-          <p class="section-subtitle label-2">Our Gallery</p>
-          <h2 class="headline-1 section-title" style="margin-bottom: 7.5rem;">Gallery</h2>
-          <div class="gallery">
-            <div class="item">
-              <img src="https://picsum.photos/600/400?image=10" />
-            </div>
-            <div class="item">
-              <img src="https://picsum.photos/600/400?image=11" />
-            </div>
-            <div class="item">
-              <img src="https://picsum.photos/600/400?image=12" />
-            </div>
-            <div class="item">
-              <img src="https://picsum.photos/600/400?image=13" />
-            </div>
-            <div class="item">
-              <img src="https://picsum.photos/600/400?image=14" />
-            </div>
-            <div class="item">
-              <img src="https://picsum.photos/600/400?image=15" />
-            </div>
-            <div class="item">
-              <img src="https://picsum.photos/600/400?image=16" />
-            </div>
-            <div class="item">
-              <img src="https://picsum.photos/600/400?image=17" />
-            </div>
-            <div class="item">
-              <img src="https://picsum.photos/600/400?image=18" />
-            </div>
-            <div class="item">
-              <img src="https://picsum.photos/600/400?image=19" />
-            </div>
-            <div class="item">
-              <img src="https://picsum.photos/600/400?image=20" />
-            </div>
-            <div class="item">
-              <img src="https://picsum.photos/600/400?image=22" />
-            </div>
-            <div class="item">
-              <img src="https://picsum.photos/600/400?image=23" />
-            </div>
-          </div>
-        </section>
 
         <!-- 
         - #EVENT
