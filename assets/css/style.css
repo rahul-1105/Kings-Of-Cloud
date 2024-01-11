@@ -1369,6 +1369,11 @@ body.nav-active {
   right: 0;
 }
 
+.menu-card img {
+  height: 100px;
+  width: 100px;
+}
+
 /*-----------------------------------*\
   #FAQs
 \*-----------------------------------*/
@@ -2004,6 +2009,7 @@ textarea.input-field {
     flex-grow: 1;
     border-block: 1px solid var(--white-alpha-20);
   }
+
 
   /**
    * reservation
